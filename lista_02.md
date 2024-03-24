@@ -62,7 +62,7 @@ function calculaOrcamento(){
     var salario = 3500;
     var saldo = 0; 
     var statusSaldo =  'positivo';
-    var i = 1;
+    var i = 1;  
 
     do{
         totalGastos += gastos[i];
@@ -106,7 +106,7 @@ Escolha a opção que responde corretamente qual seria a saída após a execuç�
 
 A) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -1050.'
 
-B) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'
+```B) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'```
 
 C) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -100.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -1050.'
 
@@ -137,7 +137,7 @@ B) O código verifica se o número é par ou ímpar. Se for par, exibe a mensage
 
 C) O código verifica se o número é par, ímpar ou divisível por 3. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3, exibe a mensagem "O número é divisível por 3!". Se for ímpar, exibe a mensagem "O número é ímpar e não é divisível por 3!".
 
-D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".
+```D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".```
 
 
 ______
@@ -201,7 +201,7 @@ Compra 3 aprovada. Saldo restante: 400
 Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
 
 
-D)
+```D)
 
 Compra 1 aprovada. Saldo restante: 800
 
@@ -212,16 +212,15 @@ Compra 3 aprovada com limite de crédito. Saldo restante: 200
 Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
 
 Compra 5 negada. Saldo insuficiente e limite de crédito excedido.
-
+```
 ______
-
 **5)** Qual é o principal ciclo de vida de um jogo em Phaser.js?
 
 Escolha a opção que responde corretamente:
 
 A) Setup -> Update -> Draw
 
-B) Preload -> Create -> Update
+```B) Preload -> Create -> Update```
 
 C) Load -> Initialize -> Render
 
@@ -234,7 +233,7 @@ Escolha a opção que responde corretamente:
 
 A) Renderizar gráficos 3D para jogos em HTML5.
 
-B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.
+```B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.```
 
 C) Criar efeitos de áudio para melhorar a experiência do usuário em jogos.
 
@@ -247,11 +246,38 @@ ______
 **7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
 ![Uma imagem](assets/image.png)
 ______
+```
 
+// // Como seria feito em JavaScript
+
+// let idade = 19
+
+// if (idade < 16) {
+//     console.log('Não pode votar');
+// } else if (idade >= 16 && idade <= 18) {
+//     console.log('Voto facultativo');
+// } else {
+//     console.log('Voto obrigatório');
+// }
+// passando pra pseudocódigo:
+// Como seria feito em JS
+// em pseudocofigo:
+
+variável idade = inserir("Insira sua idade")
+
+    se (idade < 16) {
+   imprima: ('Não pode votar');
+}   ou (idade >= 16 && idade <= 18) {
+    imprima:('Voto facultativo');
+} em ultima instancia {
+     imprima ('Voto obrigatório');
+}
+
+```
 **8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
 
 ```
-Classe FormaGeometrica:
+Classe FormaGeometrica: 
     Atributos:
         - cor
 
@@ -262,6 +288,41 @@ Classe FormaGeometrica:
         # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
 
 ```
+```
+Classe FormaGeometrica:
+    Atributos:
+        - cor
+
+ Construtor(cor):
+    esta cor é = cor
+
+    função de CalcularArea():
+        # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
+
+Classe Retangulo herda FormaGeometrica:
+    Atributos:
+        cor
+
+    função de Construtor(cor, base, altura):
+    Chama o construtor da classe FormaGeometrica passando a cor como parâmetro.
+    esta base = base
+    esta altura = altura
+
+    função de CalcularArea():
+        Retorne que area = base * altura
+
+
+Classe Circulo herda de FormaGeometrica:
+    Atributos:
+        - cor
+
+    função de Construtor (cor, raio):
+    Chama o construtor da classe FormaGeometrica passando a cor como parâmetro.
+    esta raio = raio
+
+    função de CalcularArea():
+        Retorna que area = π x raio^2.
+    
 
 ______
 
@@ -271,8 +332,49 @@ Considere a fórumla de atualização velocidade:
 ```
     velocidade = velocidadeInicial + aceleracao*tempo
 ```
+```
+Peudocodigo:
+// declaração das variáveis basicas 
+variavel velocidadeInicial
+variavel aceleracao
+variavel distanciaTotal
+variavel velocidadeMaxima
+variavel tempoMaximo
 
-______
+// inicialização das variáveis de controle
+variavel tempo = 0
+variavel distanciaPercorrida = 0
+
+// início da simulação
+Enquanto distanciaPercorrida < distanciaTotal e também tempo <= tempoMaximo
+    // calculo da velocidade atual
+    variavel velocidade = velocidadeInicial + aceleracao * tempo
+
+    // verifica se a velocidade excede o máximo permitido
+    Se velocidade > velocidadeMaxima
+        velocidade = velocidadeMaxima
+    senão Se
+
+    // atualiza a distância percorrida
+    distanciaPercorrida = distanciaPercorrida + velocidade
+
+    // incrementa o tempo
+    tempo = tempo + 1
+
+    // checa se a distância total foi percorrida
+    Se distanciaPercorrida >= distanciaTotal
+        Sair do loop
+    senão Se
+Fim Enquanto
+
+// verifica se o tempo máximo foi excedido
+Se tempo > tempoMaximo
+    Imprimir "A corrida não pode ser completada no tempo máximo."
+Senão
+    Imprimir "O carro completou a corrida em " + tempo + " minutos."
+Fim Se
+
+
 
 **10)** Uma matriz é uma coleção bidimensional de elementos, organizados em linhas e colunas. A seguir, é fornecida a implementação da função SomaDeMatrizes(matrizA, matrizB), que calcula a soma de duas matrizes. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação de duas matrizes.
 
@@ -300,4 +402,28 @@ matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 matrizSoma <- SomaDeMatrizes(matrizA, matrizB)
 Escrever("Soma das matrizes:")
 ImprimirMatriz(matrizSoma)
+```
+```Resposta
+
+função MultiplicacaoDeMatrizes(matrizA, matrizB):
+    linhasA <- tamanho(matrizA)
+    colunasA <- tamanho(matrizA[0]) # número de colunas em a
+    linhasB <- tamanho(matrizB)
+    colunasB <- tamanho(matrizB[0]) # número de colunas em b
+
+    # verifica se a multiplicação é possível
+    se colunasA ≠ linhasB então:
+        retornar "As matrizes não podem ser multiplicadas. O número de colunas de A deve ser igual ao número de linhas de B."
+
+    matrizResultado <- novaMatriz(linhasA, colunasB)
+
+    # loop para calcular o produto das matrizes
+    para i de 0 até linhasA-1 faça:
+        para j de 0 até colunasB-1 faça:
+            soma <- 0
+            para k de 0 até colunasA-1 faça: # ou linhasB, já que colunasA = linhasB
+                soma <- soma + matrizA[i][k] * matrizB[k][j]
+            matrizResultado[i][j] <- soma
+
+    retornar matrizResultado
 ```
