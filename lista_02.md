@@ -310,7 +310,6 @@ Classe Retangulo herda FormaGeometrica:
     função de CalcularArea():
         Retorne que area = base * altura
 
-
 Classe Circulo herda de FormaGeometrica:
     Atributos:
         - cor
@@ -379,7 +378,7 @@ Fim Se
 
 ```
 Função SomaDeMatrizes(matrizA, matrizB):
-    # Verifica se as duas matrizes têm o mesmo número de linhas e colunas
+    // Verifica se as duas matrizes têm o mesmo número de linhas e colunas
     Se tamanho(matrizA) ≠ tamanho(matrizB) então:
         Retornar "As matrizes não podem ser somadas. Elas têm dimensões diferentes."
     Senão:
@@ -387,7 +386,7 @@ Função SomaDeMatrizes(matrizA, matrizB):
         colunas <- tamanho(matrizA[0]) # Considerando que todas as linhas têm o mesmo número de colunas
         matrizResultado <- novaMatriz(linhas, colunas)
 
-        # Loop para percorrer cada elemento das matrizes e calcular a soma
+        // Loop para percorrer cada elemento das matrizes e calcular a soma
         Para i de 0 até linhas-1 faça:
             Para j de 0 até colunas-1 faça:
                 matrizResultado[i][j] <- matrizA[i][j] + matrizB[i][j]
@@ -410,13 +409,13 @@ função MultiplicacaoDeMatrizes(matrizA, matrizB):
     linhasB <- tamanho(matrizB)
     colunasB <- tamanho(matrizB[0]) # número de colunas em b
 
-    # verifica se a multiplicação é possível
+    // verifica se a multiplicação é possível
     se colunasA ≠ linhasB então:
         retornar "As matrizes não podem ser multiplicadas. O número de colunas de A deve ser igual ao número de linhas de B."
 
     matrizResultado <- novaMatriz(linhasA, colunasB)
 
-    # loop para calcular o produto das matrizes
+    // loop para calcular o produto das matrizes
     para i de 0 até linhasA-1 faça:
         para j de 0 até colunasB-1 faça:
             soma <- 0
